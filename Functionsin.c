@@ -1,13 +1,13 @@
 #include <stdio.h>
-
+// find the nth value formulae is
+// an = a1 +(n-1)*d
 int main()
 {
-  float cel, far;
-  int start = 0, increment = 20, end = 200;
-  while (far <= end)
-  {
-    cel = (far - 32.0) * (5.0 / 9.0);
-    printf(" Fahnrenheit %2.2f  celsius = %.2f\n", far, cel);
-    far = far + increment;
-  }
+  int a1, d, an, n;
+  a1 = 1;
+  d = 3;
+  n = 7;
+  an = 0;
+  an = a1 + (n - 1) * d;
+  printf("nth value of given data is %d", an);
 }

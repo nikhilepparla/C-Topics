@@ -2,12 +2,12 @@
 
 int main()
 {
-  for (int i = 0; i < 4; i++)
+  float cel, far;
+  int start = 0, increment = 20, end = 200;
+  while (far <= end)
   {
-    for (int j = 0; j <= i; j++)
-    {
-      printf("*");
-    }
-    printf("\n");
+    cel = (far - 32.0) * (5.0 / 9.0);
+    printf(" Fahnrenheit %2.2f  celsius = %.2f\n", far, cel);
+    far = far + increment;
   }
 }

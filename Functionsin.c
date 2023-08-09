@@ -3,11 +3,11 @@
 // an = a1 +(n-1)*d
 int main()
 {
-  int a1, d, an, n;
-  a1 = 1;
-  d = 3;
-  n = 7;
-  an = 0;
-  an = a1 + (n - 1) * d;
-  printf("nth value of given data is %d", an);
+  float hour, min;
+  min = 1 * 60.0;
+  hour = 60 * min;
+  unsigned input;
+  scanf("%u", &input);
+  printf("Milutes is %f", input / min);
+  printf("Hours is %f", input / hour);
 }

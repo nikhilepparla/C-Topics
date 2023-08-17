@@ -1,11 +1,13 @@
 #include <stdio.h>
+// Recurssion
+void fun(int n, int initial)
+{
+  if (n < initial)
+    return;
+  printf("Nikhil\n");
+  fun(n - 1, initial);
+}
 int main()
 {
-  int a = 9;
-  if (a == 9)
-    goto label1;
-  printf("no jump");
-
-label1:
-  printf("number is 9");
+  fun(3, 1);
 }

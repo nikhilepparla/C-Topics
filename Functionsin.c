@@ -1,13 +1,13 @@
 #include <stdio.h>
-// Recurssion
-void fun(int n, int initial)
+struct NewName
 {
-  if (n < initial)
-    return;
-  printf("Nikhil\n");
-  fun(n - 1, initial);
-}
+  char b;
+  char a[10];
+};
+
 int main()
 {
-  fun(3, 1);
+  struct NewName x1;
+  x1 = {'a'};
+  printf("%s", x1.a[0]);
 }

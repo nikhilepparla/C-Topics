@@ -1,8 +1,14 @@
 #include <stdio.h>
+#define N 2
 int main()
 {
-  int i = 10;
-  i = i++;
-  printf("%d", i);
+  int arr[N];
+  for (int i = 0; i < N; i++)
+  {
+    scanf("%d", &arr[i]);
+  }
+  for (int i = N - 1; i >= 0; i--)
+  {
+    printf("%d\t", arr[i]);
+  }
 }
-// output is 11

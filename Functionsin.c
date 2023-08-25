@@ -1,8 +1,8 @@
 #include <stdio.h>
 int main()
 {
-  int x = 10, y = 20;
-  int z = (x++, x++);
-  printf("%d", z);
+  int i = 10;
+  i = i++;
+  printf("%d", i);
 }
-//output is 11
+// output is 11

@@ -1,14 +1,20 @@
 #include <stdio.h>
-#define N 2
+#define MAX 10
+#define NUM 5
 int main()
 {
-  int arr[N];
-  for (int i = 0; i < N; i++)
+  int arr[MAX] = {0};
+  int array[NUM] = {5, 3, 2, 5};
+  for (int i = 0; i < NUM; i++)
   {
-    scanf("%d", &arr[i]);
-  }
-  for (int i = N - 1; i >= 0; i--)
-  {
-    printf("%d\t", arr[i]);
+    int value = array[i];
+    if (arr[value] == 1)
+    {
+      printf("Duplicate values %d", array[i]);
+      break;
+    }
+    else
+      printf("Not ducplicte values %d\n", array[i]);
+    arr[array[i]] = 1;
   }
 }
